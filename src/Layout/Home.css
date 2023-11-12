@@ -1,0 +1,102 @@
+.wrapper {
+  display: flex;
+}
+
+.content-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  background-color: blue;
+  color: white;
+  height: 150px;
+}
+
+.content {
+  background-color: yellow;
+  color: white;
+  height: 400px;
+  width: 100%;
+}
+.feature {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 4rem;
+  font-size: 2rem;
+}
+.mt-n4 {
+  margin-top: -1.5rem !important;
+}
+
+.footer {
+  background-color: orange;
+  color: white;
+  height: 150px;
+}
+.full-background {
+  background-image: url("../../public/img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Đặt chiều cao là 100% chiều cao của màn hình */
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  background: rgba(0, 0, 0, 0.7); /* Độ trong suốt 50% */
+  color: white;
+  position: relative;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.5rem; /* Cỡ chữ 1.5rem */
+}
+.content {
+  background: rgba(0, 0, 0, 0.4); /* Độ mờ 40% */
+  height: calc(
+    100vh - 5rem
+  ); /* Chiều cao chính là chiều cao màn hình trừ chiều cao của header */
+}
+.inner-content {
+  background: rgba(0, 0, 0, 0.4);
+  height: calc(100vh - 10rem);
+  margin: 2rem 20% 3rem;
+}
+.portrait-images {
+  display: flex;
+  gap: 10%;
+  justify-content: center; /* Căn theo chiều ngang */
+  align-items: center; /* Căn theo chiều dọc */
+  height: 100%; /* Để giúp ảnh căn giữa trong chiều dọc */
+}
+
+.portrait-images img {
+  width: 8rem;
+  height: 10rem;
+}
+.glass-item {
+  height: 100%;
+  background-color: white;
+}
+/* Trong file content.css */
+.inner-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Để đảm bảo cao đủ */
+}
+
+.portrait-images {
+  flex: 2; /* Chiếm 2 phần tử trong 3 */
+}
+
+.glass-item {
+  flex: 1; /* Chiếm 1 phần tử trong 3 */
+  height: 100%;
+}
