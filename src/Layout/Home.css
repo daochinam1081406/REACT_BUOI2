@@ -32,11 +32,6 @@
   margin-top: -1.5rem !important;
 }
 
-.footer {
-  background-color: orange;
-  color: white;
-  height: 150px;
-}
 .full-background {
   background-image: url("../../public/img/background.jpg");
   background-size: cover;
@@ -67,36 +62,24 @@
 .inner-content {
   background: rgba(0, 0, 0, 0.4);
   height: calc(100vh - 10rem);
-  margin: 2rem 20% 3rem;
+  margin: 2rem 4% 3rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 .portrait-images {
   display: flex;
-  gap: 10%;
-  justify-content: center; /* Căn theo chiều ngang */
-  align-items: center; /* Căn theo chiều dọc */
-  height: 100%; /* Để giúp ảnh căn giữa trong chiều dọc */
+  justify-content: space-between; /* Để căn đều hai ảnh ngang */
+  margin: 0 auto; /* Canh giữa theo chiều ngang */
+  max-width: 80%; /* Kích thước tối đa của ảnh so với trình duyệt */
 }
 
 .portrait-images img {
-  width: 8rem;
-  height: 10rem;
-}
-.glass-item {
-  height: 100%;
-  background-color: white;
-}
-/* Trong file content.css */
-.inner-content {
-  display: flex;
-  flex-direction: column;
-  height: 100%; /* Để đảm bảo cao đủ */
-}
-
-.portrait-images {
-  flex: 2; /* Chiếm 2 phần tử trong 3 */
-}
-
-.glass-item {
-  flex: 1; /* Chiếm 1 phần tử trong 3 */
-  height: 100%;
+  width: 45%; /* Điều chỉnh kích thước của mỗi ảnh */
+  object-fit: cover; /* Đảm bảo tỉ lệ và đủ chiều rộng */
 }
