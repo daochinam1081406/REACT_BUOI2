@@ -59,11 +59,6 @@
     100vh - 5rem
   ); /* Chiều cao chính là chiều cao màn hình trừ chiều cao của header */
 }
-.inner-content {
-  background: rgba(0, 0, 0, 0.4);
-  height: calc(100vh - 10rem);
-  margin: 2rem 4% 3rem;
-}
 
 .content {
   display: flex;
@@ -82,4 +77,64 @@
 .portrait-images img {
   width: 45%; /* Điều chỉnh kích thước của mỗi ảnh */
   object-fit: cover; /* Đảm bảo tỉ lệ và đủ chiều rộng */
+}
+.img-model {
+  height: 240;
+  width: 290;
+}
+content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.model-wrapper {
+  display: flex;
+  justify-content: space-around; /* Adjust the space between the model images */
+  max-width: 500px; /* Hoặc sử dụng width: 500px; nếu bạn muốn giữ nguyên chiều rộng */
+  margin: 0 auto; /* Canh giữa thẻ cha */
+}
+
+.img-model {
+  height: 240px; /* Set the height for the model images */
+  width: 200px; /* Set the width for the model images */
+}
+
+.glass-items {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.glass-items img {
+  width: 50%; /* Set the width of the glasses images to be 10% of their original size */
+}
+@media (min-width: 1200px) {
+  /* Màn hình rộng: Khoảng cách là 200px */
+  .model-wrapper {
+    margin-right: 200px;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  /* iPad: Khoảng cách là 50px */
+  .model-wrapper {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Màn hình điện thoại: Khoảng cách là 20px */
+  .model-wrapper {
+    margin-right: 20px;
+  }
+}
+.glass-content {
+  background-color: white;
+  width: 500px;
+}
+.img-model.with-glasses {
+  position: relative;
 }
